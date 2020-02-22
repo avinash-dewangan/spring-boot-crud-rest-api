@@ -2,7 +2,7 @@
 spring boot crud rest api with mysql
 
 
-#create a database and create table
+# create a database and create table
 create database crudapi;
 
 use crudaip;
