@@ -44,4 +44,9 @@ Step 8 : Commit and Push every change to the repo
 https://automationstepbystep.com/online-courses/
 
 
+# How to run spring boot maven project in command line
+goto root directory project the run
+./mvnw spring-boot:run
+
+
 
