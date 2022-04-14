@@ -9,7 +9,7 @@ import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import in.avinash.springbootcrud.springbootcrudapi.modal.Employee;
+import in.avinash.springbootcrud.springbootcrudapi.model.Employee;
 
 @Repository
 public class EmployeeDAOImpl implements EmployeeDAO {

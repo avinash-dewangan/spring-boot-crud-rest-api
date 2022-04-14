@@ -2,7 +2,7 @@ package in.avinash.springbootcrud.springbootcrudapi.service;
 
 import java.util.List;
 
-import in.avinash.springbootcrud.springbootcrudapi.modal.Employee;
+import in.avinash.springbootcrud.springbootcrudapi.model.Employee;
 
 public interface EmployeeService {
 

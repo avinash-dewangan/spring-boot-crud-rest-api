@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import in.avinash.springbootcrud.springbootcrudapi.dao.EmployeeDAO;
-import in.avinash.springbootcrud.springbootcrudapi.modal.Employee;
+import in.avinash.springbootcrud.springbootcrudapi.model.Employee;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {

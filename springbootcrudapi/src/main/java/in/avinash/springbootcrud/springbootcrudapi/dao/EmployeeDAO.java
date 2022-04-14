@@ -2,7 +2,7 @@ package in.avinash.springbootcrud.springbootcrudapi.dao;
 
 import java.util.List;
 
-import in.avinash.springbootcrud.springbootcrudapi.modal.Employee;
+import in.avinash.springbootcrud.springbootcrudapi.model.Employee;
 
 public interface EmployeeDAO {
 
