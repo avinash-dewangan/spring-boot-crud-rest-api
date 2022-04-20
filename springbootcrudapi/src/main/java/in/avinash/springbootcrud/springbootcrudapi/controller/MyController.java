@@ -40,6 +40,7 @@ public class MyController {
             response.put("currentPage", pageCountry.getNumber());
             response.put("totalItems", pageCountry.getTotalElements());
             response.put("totalPages", pageCountry.getTotalPages());
+            response.put("lastPage",pageCountry.stream().findFirst());
             return response;
         } catch (Exception e) {
             LOGGER.error("error : " + e);
@@ -73,5 +74,17 @@ public class MyController {
             response.put("error", e.getMessage());
             return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
         }
+    }
+    @GetMapping("/findAll")
+    public List<Country> findAll(){
+        return countryService.findAll();
+    }
+
+    @GetMapping("/findByCountryName/{countryName}")
+    public List<Country> findByName(@PathVariable String countryName){
+
+        Country country = countryService.getCountryByName(countryName);
+        List<Country> countries = countryService.findByName(countryName);
+        return countries;
     }
 }

@@ -1,14 +1,12 @@
 package in.avinash.springbootcrud.springbootcrudapi.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "countries")
+@NamedQuery(name = "Country.countryListByName",
+        query = "SELECT c FROM Country c where c.name=?1")
 public class Country {
 
     @Id

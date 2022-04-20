@@ -23,4 +23,21 @@ public class CountryService implements ICountryService {
         return iCountryDao.findAll(pageNo, pageSize);
     }
 
+    @Override
+    public List<Country> findAll() {
+        return iCountryDao.findAll();
+    }
+
+    @Override
+    public List<Country> findByName(String countryName) {
+
+        return (List<Country>) iCountryDao.findByName(countryName);
+    }
+
+    @Override
+    public Country getCountryByName(String countryName) {
+
+        return iCountryDao.getCountryByName(countryName);
+    }
+
 }
